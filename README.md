@@ -11,7 +11,7 @@ Use TDD to write and make pass the following tests:
 ### Dinosaur:
 - should have a type
 - should have a number of offspring per year
- 
+
 ### Park:
 - enclosure should start empty
 - should be able to add a dinosaur
@@ -28,20 +28,22 @@ Use TDD get the following tests to pass:
 - should be able to calculate number of dinosaurs after year two, starting with 1 dinosaur
 - should be able to calculate number of dinosaurs after year two, starting with 2 dinosaurs
 
-  ```
+```
 it('should be able to calculate number of dinosaurs after 1 year starting with 1 dinosaur', function(){
   park.addDinosaur(tyrannosaurus);
   assert.strictEqual(park.calculateDinosaurs(1), 4);
   });
-
+  ```
+  ```
   it('should be able to calculate number of dinosaurs after 2 years starting with 1 dinosaur', function(){
-  park.addDinosaur(tyrannosaurus);
-  assert.strictEqual(park.calculateDinosaurs(2), 16);
-});
-
-it('should be able to calculate number of dinosaur after year two starting with 2 dinosaurs', function(){
-park.addDinosaur(tyrannosaurus);
-park.addDinosaur(dilophosaurus);
-assert.strictEqual(park.calculateDinosaurs(2), 25);
-});
+    park.addDinosaur(tyrannosaurus);
+    assert.strictEqual(park.calculateDinosaurs(2), 16);
+    });
+    ```
+    ```
+    it('should be able to calculate number of dinosaur after year two starting with 2 dinosaurs', function(){
+    park.addDinosaur(tyrannosaurus);
+    park.addDinosaur(dilophosaurus);
+    assert.strictEqual(park.calculateDinosaurs(2), 25);
+  });
   ```
